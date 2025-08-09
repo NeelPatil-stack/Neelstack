@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Company App
+Comment=React + Vite Development Server
+Exec=npm run dev
+Path=/c/Users/Neel Patil/Desktop/company.app
+Icon=applications-development
+Terminal=true
+Categories=Development;WebDevelopment;
+StartupNotify=true 

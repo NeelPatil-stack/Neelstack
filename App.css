@@ -1,0 +1,130 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Modern Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(100, 108, 255, 0.08);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+}
+.navbar button {
+  background: none;
+  border: none;
+  color: #646cff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar button.active, .navbar button:hover {
+  background: #646cff;
+  color: #fff;
+}
+
+/* Card Section */
+.section-card {
+  margin: 3rem 0;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(100, 108, 255, 0.10);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 0.3s;
+  opacity: 0;
+  animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: var(--fade-delay, 0s);
+}
+.section-card:hover {
+  box-shadow: 0 8px 32px rgba(100, 108, 255, 0.18);
+}
+
+.section-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #646cff;
+}
+
+/* Logo spin on hover */
+.company-logo {
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.company-logo:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .section-card {
+    padding: 1rem 0.5rem;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
